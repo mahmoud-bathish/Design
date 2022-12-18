@@ -116,65 +116,65 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi delectus quas, inventore saepe in, cum alias vitae deleniti perferendis quae molestias sit nisi sint.
                 </p>
             </div>
-            <ul class="shuffle">
-                <li class="active">All</li>
-                <li>App</li>
-                <li>Photo</li>
-                <li>Web</li>
-                <li>Print</li>
+            <ul class="shuffle" id="fil">
+                <li data-filter="all" class="active">All</li>
+                <li data-filter=".app">App</li>
+                <li data-filter=".photo">Photo</li>
+                <li data-filter=".web">Web</li>
+                <li data-filter=".print">Print</li>
             </ul>
         </div>
         <div class="imgs-container">
-            <div class="box">
+            <div class="mix prt-cart app box">
                 <img src="./images/shuffle-01.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart photo box">
                 <img src="./images/shuffle-02.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart web box">
                 <img src="./images/shuffle-03.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart photo box">
                 <img src="./images/shuffle-04.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart app box">
                 <img src="./images/shuffle-05.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart web box">
                 <img src="./images/shuffle-06.png" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart print box">
                 <img src="./images/shuffle-07.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="mix prt-cart print box">
                 <img src="./images/shuffle-08.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
@@ -213,22 +213,22 @@
         <div class="container">
           <div class="box">
             <i class="fas fa-mug-hot"></i>
-            <div class="number">1.236</div>
+            <div class="number" data-goal="356">0</div>
             <p>Coffee Drinks</p>
           </div>
           <div class="box">
             <i class="far fa-folder"></i>
-            <div class="number">256</div>
+            <div class="number"  data-goal="256">0</div>
             <p>Completed Projects</p>
           </div>
           <div class="box">
             <i class="far fa-envelope"></i>
-            <div class="number">1,743</div>
+            <div class="number" data-goal="443">0</div>
             <p>Mail Sent</p>
           </div>
           <div class="box">
             <i class="fas fa-trophy"></i>
-            <div class="number">17</div>
+            <div class="number" data-goal="197">0</div>
             <p>Awards Received</p>
           </div>
         </div>
@@ -274,25 +274,25 @@
             <div class="prog-holder">
               <h4>Adobe</h4>
               <div class="prog">
-                <span id="data" data-progress="0"></span>
+                <span style="width:0" data-width="78%" data-progress="78%"></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>Html &amp; Css</h4>
               <div class="prog">
-                <span style="width: 85%" id="dataa" data-progress="85%"></span>
+                <span style="width: 0" data-width="85%" data-progress="85%"></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>JavaScript</h4>
               <div class="prog">
-                <span style="width: 80%" data-progress="80%"></span>
+                <span style="width: 0" data-width="80%" data-progress="80%"></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>Php</h4>
               <div class="prog">
-                <span style="width: 90%" data-progress="90%"></span>
+                <span style="width:0" data-width="90%" data-progress="90%"></span>
               </div>
             </div>
           </div>
@@ -441,29 +441,7 @@
         </div>
       </div>
       <!-- End Footer -->
-  <!-- <script>
-    let dataa = document.getElementById("data");
-    let widthh =0;
-    let counter = dataa.dataset.progress;
-    dataa.style.transition = '2.5s';
-if(widthh < 95){
-    setInterval(() => {
-        widthh++  
-        dataa.style.width = widthh + '%';
-        if(widthh = 95){
-            clearInterval();
-        }
-    }, 20);
-} 
-if(counter < 95){
-    setInterval(() => {
-        counter++
-        if(counter == 95){
-            clearInterval();
-        }
-    }, 20);
-} 
-
-</script> -->
+      <script src="./js/mixitup.min.js"></script>
+      <script src="./js/index.js"></script>
 </body>
 </html>
