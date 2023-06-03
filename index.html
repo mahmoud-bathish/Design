@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/Normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="/images/logoo.png">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -21,12 +24,12 @@
             <nav> 
                 <i class="fas fa-bars toggle-menu"></i>
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="form">
                     <i class="fas fa-search"></i>
@@ -44,16 +47,9 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae voluptas sunt officia amet, quod corrupti soluta sapiente repellat quaerat aspernatur ducimus veniam. Beatae, aliquam.</p>
             </div>
         </div>
-        <i class="fas fa-angle-left change-background fa-2x"></i>
-        <i class="fas fa-angle-right change-background fa-2x"></i>
-        <ul class="bullets">
-            <li></li>
-            <li class="active"></li>
-            <li></li>
-        </ul>
     </div>
     <!-- End Landing -->
-    <div class="services">
+    <div id="services" class="services">
         <div class="container">
             <div class="main-heading">
                 <h2>Services</h2>
@@ -108,7 +104,7 @@
     </div>
     <!-- End Design -->
     <!-- Start Portfolio -->
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="main-heading">
                 <h2>Portfolio</h2>
@@ -182,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="more">More</a>
+        <a  class="more">More</a>
     </div>    
     <!-- End Portfolio -->
     <!-- Start Video -->
@@ -198,7 +194,7 @@
     </div>
     <!-- End Video -->
     <!-- Start About -->
-    <div class="about">
+    <div id="about" class="about">
         <div class="container">
             <div class="main-heading">
                 <h2>About Us</h2>
@@ -243,6 +239,7 @@
               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
               tincidunt.
             </p>
+           
             <div class="content">
               <img src="images/shuffle-01.jpg" alt="" />
               <div class="text">
@@ -259,11 +256,6 @@
                 <p>John Doe, CEO</p>
               </div>
             </div>
-            <ul class="bullets">
-              <li></li>
-              <li class="active"></li>
-              <li></li>
-            </ul>
           </div>
           <div class="skills">
             <h3>Skills</h3>
@@ -308,7 +300,7 @@
       </div>
       <!-- End Quote -->
           <!-- Start Pricing -->
-    <div class="pricing">
+    <div id="pricing" class="pricing">
         <div class="container">
           <div class="main-heading">
             <h2>Pricing</h2>
@@ -330,7 +322,7 @@
                 <li>Feature</li>
               </ul>
               <div class="foot">
-                <a href="#">Buy Now</a>
+                <a >Buy Now</a>
               </div>
             </div>
             <div class="plan">
@@ -345,7 +337,7 @@
                 <li>Feature</li>
               </ul>
               <div class="foot">
-                <a href="#">Buy Now</a>
+                <a >Buy Now</a>
               </div>
             </div>
             <div class="plan">
@@ -360,7 +352,7 @@
                 <li>Feature</li>
               </ul>
               <div class="foot">
-                <a href="#">Buy Now</a>
+                <a >Buy Now</a>
               </div>
             </div>
             <div class="plan">
@@ -375,12 +367,12 @@
                 <li>Feature</li>
               </ul>
               <div class="foot">
-                <a href="#">Buy Now</a>
+                <a >Buy Now</a>
               </div>
             </div>
           </div>
           <p class="contact-text">Contact us if you have special request</p>
-          <a href="#" class="contact-link">Contact Us</a>
+          <a class="contact-link">Contact Us</a>
         </div>
       </div>
       <!-- End Pricing -->
@@ -390,7 +382,7 @@
           <form action="">
             <i class="far fa-envelope fa-lg"></i>
             <input type="email" name="mail" placeholder="Your Email" />
-            <input type="submit" value="Subscribe" />
+            <input type="submit" style="pointer-events: none;" value="Subscribe" />
           </form>
           <p>
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget tincidunt.
@@ -399,7 +391,7 @@
       </div>
       <!-- End Subscribe -->
       <!-- Start Contact -->
-      <div class="contact">
+      <div id="contact" class="contact">
         <div class="container">
           <div class="main-heading">
             <h2>Contact Us</h2>
@@ -413,7 +405,7 @@
               <input class="main-input" type="text" name="name" placeholder="Your Name" />
               <input class="main-input" type="email" name="mail" placeholder="Your Email" />
               <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
-              <input type="submit" value="Send Message" />
+              <input type="submit" style="pointer-events: none;" value="Send Message" />
             </form>
             <div class="info">
               <h4>Get In Touch</h4>
@@ -443,5 +435,6 @@
       <!-- End Footer -->
       <script src="./js/mixitup.min.js"></script>
       <script src="./js/index.js"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    </body>
 </html>

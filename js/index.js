@@ -36,17 +36,20 @@ let spans = document.querySelectorAll(".prog-holder .prog span");
 let sectionTwo = document.querySelector(".our-skills");
 
 window.onscroll = function () {
-    console.log("Mahmoud")
-    if(window.scrollY >= section.offsetTop){
+    const sectionRect = section.getBoundingClientRect();
+    const sectionTop = sectionRect.top;
+    const sectionBottom = sectionRect.bottom;
+    const windowHeight = window.innerHeight;
+  
+    if(sectionBottom >= 0 && sectionTop <= windowHeight / 3){
         if(!started){
             nums.forEach((num) => startCount(num));
         }
         started = true;
     };
-    if(window.scrollY >= sectionTwo.offsetTop){
+    if(sectionBottom >= 0 && sectionTop <= windowHeight / 3){
         spans.forEach((span) => {
             span.style.width = span.dataset.width;
         })
     }
 }
-

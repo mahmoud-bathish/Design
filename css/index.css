@@ -213,6 +213,7 @@ header nav .form i {
     background-image: url('../images/landing.jpg');
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .landing .overlay {
@@ -360,6 +361,7 @@ header nav .form i {
     position: relative;
     background-image: url("../images/design-features.jpg");
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -597,6 +599,8 @@ width: 100%;
     background-image: url("../images/shuffle-03.jpg");
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
+
   }
   .stats::before {
     content: "";
@@ -707,23 +711,6 @@ width: 100%;
     font-size: 14px;
     margin-bottom: 10px;
   }
-  .our-skills .testimonials .bullets {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .our-skills .testimonials .bullets li {
-    width: 14px;
-    height: 14px;
-    border: 1px solid #aaa;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .our-skills .testimonials .bullets li.active {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-  }
   .our-skills .skills .prog-holder {
     margin-bottom: 40px;
   }
@@ -777,6 +764,8 @@ width: 100%;
     text-align: center;
     color: white;
     quotes: none;
+    background-attachment: fixed;
+
   }
   .quote::before {
     content: "";
@@ -912,6 +901,8 @@ width: 100%;
     background-size: cover;
     position: relative;
     color: white;
+    background-attachment: fixed;
+
   }
   .subscribe::before {
     content: "";
@@ -1064,6 +1055,8 @@ width: 100%;
     background-size: cover;
     position: relative;
     color: white;
+    background-attachment: fixed;
+
     text-align: center;
   }
   .footer::before {
